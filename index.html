@@ -5,7 +5,7 @@
     <meta http-equiv="Cache-control" content="public">
     <title>Plotly</title>
   </head>
-  <body>
+  <body style="background:#DDDDDD;">
     <div id="chart"></div>
     <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
     <script type="text/javascript">
@@ -20,6 +20,8 @@
 
       const layout = {
         title: '# of votes',
+        plot_bgcolor:"#DDDDDD",
+        paper_bgcolor:"#DDDDDD"
       };
 
       Plotly.newPlot('chart', data, layout);
