@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-control" content="public">
+    <title>Plotly</title>
+  </head>
+  <body>
+    <div id="chart"></div>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <script type="text/javascript">
+      const data = [{
+        x: ['red', 'green', 'blue'],
+        y: [12, 9, 3],
+        type: 'bar',
+        marker: {
+          color: ['red', 'green', 'blue']
+        }
+      }];
+
+      const layout = {
+        title: '# of votes',
+      };
+
+      Plotly.newPlot('chart', data, layout);
+    </script>
+  </body>
+</html>
