@@ -21,7 +21,10 @@
       const layout = {
         title: '# of votes',
         plot_bgcolor:"#DDDDDD",
-        paper_bgcolor:"#DDDDDD"
+        paper_bgcolor:"#DDDDDD",
+        yaxis: {
+          "gridcolor": "#AAAAAA"
+        }
       };
 
       Plotly.newPlot('chart', data, layout);
